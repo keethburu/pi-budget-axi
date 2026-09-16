@@ -28,11 +28,17 @@ The CLI follows the [AXI](https://github.com/kunchenguid/axi) principles and is 
 ## Setup
 
 ```sh
-npm install
+git clone https://github.com/keethburu/pi-budget-axi
+cd pi-budget-axi
+npm ci
 npm run build
 npm install -g .
+mkdir -p ~/.pi/agent/extensions
 ln -s "$PWD/extension/pi-budget.ts" ~/.pi/agent/extensions/pi-budget.ts
 ```
+
+`npm install -g .` links the global command to this checkout, so run `npm run build` after
+pulling changes. Installing directly from the git URL is not supported.
 
 `~/.pi/agent/budget.json` (or `$PI_CODING_AGENT_DIR/budget.json`):
 
