@@ -1,12 +1,13 @@
 # pi-budget-axi
 
-Caps what pi may spend on a model provider over rolling time windows, and reports the
-state in the same `quota[]` shape as `quota-axi`. It is meant for providers billed per
+Caps what [pi](https://github.com/earendil-works/pi) may spend on a model provider over
+rolling time windows, and reports the state in the same `quota[]` shape as
+[quota-axi](https://github.com/kunchenguid/quota-axi). It is meant for providers billed per
 token where the account itself offers no usable budget controls, such as an Azure OpenAI
 deployment behind pi's `azure-openai-responses` provider.
 
 The CLI follows the [AXI](https://github.com/kunchenguid/axi) principles and is built on
-`axi-sdk-js`.
+[`axi-sdk-js`](https://github.com/kunchenguid/axi/tree/main/packages/axi-sdk-js).
 
 ## How it works
 
