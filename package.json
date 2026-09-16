@@ -1,0 +1,36 @@
+{
+  "name": "pi-budget-axi",
+  "version": "0.1.0",
+  "description": "Rolling-window spend budget for pi model providers",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "pi-budget-axi": "dist/bin/pi-budget-axi.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "axi-sdk-js": "0.1.12"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.85.1",
+    "@types/node": "24.13.5",
+    "fast-check": "4.10.1",
+    "typescript": "7.0.2",
+    "vitest": "5.0.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keethburu/pi-budget-axi.git"
+  }
+}
